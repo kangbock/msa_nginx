@@ -24,7 +24,7 @@ mysql -h prod-kb97-mysql.mysql.database.azure.com -u admin1 -pIt12345! --ssl-ca=
   	FOREIGN KEY (member_id) REFERENCES member(id)
   	);
 
-CREATE USER 'admin1'@'prod-kb97-mysql.mysql.database.azure.com' IDENTIFIED BY 'It12345!';
+# CREATE USER 'admin1'@'prod-kb97-mysql.mysql.database.azure.com' IDENTIFIED BY 'It12345!';
 GRANT ALL ON project.* TO 'admin1'@'prod-kb97-mysql.mysql.database.azure.com';
   flush privileges;
 
