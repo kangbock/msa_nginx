@@ -40,4 +40,6 @@ GRANT ALL ON project.* TO 'admin1'@'prod-kb97-mysql.mysql.database.azure.com';
   UPDATE board SET board_id = @COUNT:=@COUNT+1;
 
   SELECT * FROM board, member WHERE member.id = board.member_id;
+
+  INSERT into member values(null, "aaa@naver.com", "aaa", "aaa", "010-0000-0000", "aaa");
 FOE
