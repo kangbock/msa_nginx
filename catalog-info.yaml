@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1beta1
+kind: Component
+metadata:
+  name: nginx
+  description: NGINX sample
+  annotations:
+    backstage.io/kubernetes-id: nginx
+    backstage.io/kubernetes-namespace: default
+spec:
+  type: service
+  lifecycle: production
+  owner: team-devops
